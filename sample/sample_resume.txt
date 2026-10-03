@@ -1,0 +1,6 @@
+John Smith – john.smith@email.com
+Education: B.Sc. Computer Science, MIT, 2020
+Skills: Python, Machine Learning, Data Analysis
+Experience:
+- Software Engineer at Google (2020–2023)
+- Data Scientist at OpenAI (2023–Present)

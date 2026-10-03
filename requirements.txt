@@ -1,0 +1,7 @@
+streamlit>=1.46
+pandas>=2.0
+pypdf>=4.0
+requests>=2.31
+python-dotenv>=1.0
+langchain-core>=0.3
+langchain-classic>=1.0

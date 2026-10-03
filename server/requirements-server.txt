@@ -1,0 +1,6 @@
+transformers==4.52.4
+accelerate
+bitsandbytes
+fastapi
+uvicorn
+pyngrok

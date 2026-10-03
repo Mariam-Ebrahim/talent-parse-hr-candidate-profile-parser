@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+/* keep Streamlit's icon font, otherwise icons show as words like "visibility" */
+span[data-testid="stIconMaterial"] {
+  font-family: "Material Symbols Rounded" !important;
+}
+
+:root {
+  --accent: #3447D4; --accent-soft: #E8EBFC; --fill: #F7F8FE; --fill-border: #B9C2F5;
+  --ink: #0F1B2D; --muted: #4B5870; --line: #E1E6EE;
+}
+html, body, .stApp, [class*="st-"] { font-family: 'Plus Jakarta Sans', sans-serif; }
+.stApp { background: #F5F7FA; color: var(--ink); }
+header[data-testid="stHeader"] { background: transparent; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.2rem; margin-bottom: 1rem; }
+.brand .logo { width: 30px; height: 30px; border-radius: 8px; background: var(--accent); display: inline-block; }
+div[data-testid="stVerticalBlockBorderWrapper"] { background: #fff; border-radius: 16px; border-color: var(--line); }
+h3 { font-weight: 800; }
+/* auto-filled cells get a soft tint so reviewers see what the model wrote */
+div[data-baseweb="input"], div[data-baseweb="select"] > div {
+  background: var(--fill); border: 1.5px solid var(--fill-border); border-radius: 10px;
+}
+div[data-testid="stTextInput"] label p, div[data-testid="stTextArea"] label p { font-weight: 700; color: var(--muted); font-size: .8rem; }
+button[kind="primary"] { background: var(--accent); border: 0; border-radius: 12px; font-weight: 700; min-height: 3rem; }
+button[kind="primary"]:hover { background: #2A3AA8; }
+button[kind="secondary"] { border: 1.5px solid #CBD3DF; border-radius: 10px; font-weight: 700; min-height: 3rem; }
+span[data-baseweb="tag"] { background: var(--accent-soft); color: #2A3AA8; border-radius: 99px; font-weight: 700; }
+.badge { display: inline-block; font-size: .75rem; font-weight: 700; color: #0B6B3A; background: #DDF4E7;
+         padding: 6px 14px; border-radius: 99px; margin-top: .6rem; }
+/* wider sidebar (change 380px to whatever you like) */
+section[data-testid="stSidebar"][aria-expanded="true"] {
+  min-width: 380px;
+  max-width: 380px;
+}
